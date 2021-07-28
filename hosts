@@ -1,0 +1,6 @@
+[all:vars]
+bmc_address=
+
+[ansible]
+localhost
+
