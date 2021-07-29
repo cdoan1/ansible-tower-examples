@@ -16,7 +16,6 @@
       register: users
     - ansible.builtin.debug:
         msg: 'User {{ users.list.1.name }} has UID {{ users.list.1.uid }} and GID {{ users.list.1.gid }}'
-    - name: Download ansible tower tar ball
     - name: Unarchive a file that needs to be downloaded (added in 2.0)
       ansible.builtin.unarchive:
         src: https://releases.ansible.com/ansible-tower/setup_openshift/ansible-tower-openshift-setup-3.8.3-1.tar.gz
