@@ -27,5 +27,5 @@
       register: output
     - name: Verify parameters passed in
       debug:
-        msg: "Additional arguments: {{ cluster_name }}"
+        msg: "Additional arguments: {{ cluster_name | default('undefined') }}"
      
