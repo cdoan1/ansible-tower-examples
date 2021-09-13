@@ -25,3 +25,7 @@
       shell: |
         ls -al /tmp
       register: output
+    - name: Verify parameters passed in
+      debug:
+        msg: "Additional arguments: {{ cluster_name }}"
+     
